@@ -1,0 +1,66 @@
+body{
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*header section*/
+.header-section{
+  background-image: url('../images/image.png');
+  max-width: 1600px;
+  height: 800px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.banner-title{
+  position: absolute;
+  text-align: right;
+  left: 845px;
+  right: 230px;
+  top: 216px;
+}
+.banner-title h1{
+ color: #151414;
+}
+.banner-title p{
+  color: #444343;
+}
+.banner-title .btn{
+  padding: 21px 25px 20px 26px;
+  background-color: #F15B22;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin-top: 18px;
+}
+.banner-title .btn:hover{
+ transform: scale(1.1);
+ cursor: pointer;
+}
+/*main-section*/
+.hero-section{
+  margin-top: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.img img{
+  position: absolute;
+  width: 569px;
+  height: 723.3px;
+  left: 228.86px;
+  opacity: 100%;
+}
+.side-section{
+  top: 370px;
+  left: 862px;
+  right: 322px;
+  position: absolute;
+}
+.side-section p , pre {
+  color: #444343;
+}
