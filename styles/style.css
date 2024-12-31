@@ -1,66 +1,193 @@
-body{
-  font-family: "Work Sans", sans-serif;
+*{
   margin: 0;
   padding: 0;
 }
-/*header section*/
-.header-section{
-  background-image: url('../images/image.png');
-  max-width: 1600px;
-  height: 800px;
+body{
+  font-family: "Work Sans", serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+/*Hero Section*/
+.hero-section{
+  background-image: url('/images/image.png');
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+*.container{
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.column-wrapper{
   display: flex;
-  align-items: center;
-  position: relative;
+  flex-wrap: wrap;
 }
-.banner-title{
-  position: absolute;
-  text-align: right;
-  left: 845px;
-  right: 230px;
-  top: 216px;
+.left-side{
+  flex: 0 0 50%;
 }
-.banner-title h1{
- color: #151414;
+.right-side{
+  flex: 0 0 50%;
 }
-.banner-title p{
-  color: #444343;
+.hero-title{
+  padding: 203px;
 }
-.banner-title .btn{
-  padding: 21px 25px 20px 26px;
+.title{
+  font-size: 30px;
+  line-height: auto;
+  padding-bottom: 20px;
+}
+.sub-title{
+ color: #444343;
+ line-height: 26px;
+ padding-bottom: 20px;
+ font-weight: 400;
+}
+.btn{
   background-color: #F15B22;
   color: #FFFFFF;
-  font-size: 20px;
-  font-weight: 600;
+  padding: 21px 25px 20px 26px;
   border: none;
-  border-radius: 5px;
-  margin-top: 18px;
+  border-radius: 6px;
+  font-weight: 600px;
+  font-size: 18px;
+  cursor: pointer;
 }
-.banner-title .btn:hover{
- transform: scale(1.1);
- cursor: pointer;
+.btn:hover{
+  background-color: #edaa4b;
+  color: rgba(67, 14, 14, 0.642);
+  transition: 2s;
+  transform: scale(1.1);
 }
-/*main-section*/
-.hero-section{
-  margin-top: 132px;
+/*featurs section*/
+.features-section .column-wrapper{
   display: flex;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
+  margin-top: 130px;
+  gap: 30px;
 }
+
 .img img{
-  position: absolute;
-  width: 569px;
-  height: 723.3px;
-  left: 228.86px;
-  opacity: 100%;
+  margin-left: 90px;
+  width: 550px;
+  height: 710px;
+ 
 }
-.side-section{
-  top: 370px;
-  left: 862px;
-  right: 322px;
-  position: absolute;
+.right-side .features-list{
+  margin-top: 240px;
+  width: 400px;
+  height: 380px ;
 }
-.side-section p , pre {
+.features-list .title{
+  width: 270px;
+  font-size: 37px;
+}
+.features-list .info{
+  font-weight: 400;
+  font-size: 16px;
   color: #444343;
+  line-height: 26px;
+}
+ul{
+  list-style-type: none;
+  margin-top: 15px;
+}
+ul li{
+  line-height: 35px;
+}
+/*planning-section*/
+.title h4{
+  display: block;
+  text-align: center;
+  margin-top: 130px;
+}
+.planning-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin: 30px 0;
+}
+
+.planning-wrapper .planning-item{
+  font-size: 23px;
+}
+.planning-wrapper .description-text{
+  font-weight: 500;
+  font-size: 25px;
+  color: #737272;
+}
+/*motive-section*/
+.motive-section .container{
+  background-image: url('/images/gradient2.png') , url('/images/watch.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 130px 0;
+  position: relative;
+  height:300px;
+}
+
+.motivational-line h4{
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.motive-section .btn-2{
+ background-color: #FFFFFF;
+ color: #F15B22;
+ padding: 21px 36px;
+ border: none;
+ border-radius: 5px;
+ margin: 36px 500px 40px 54px;
+ font-size: 20px;
+ font-weight: 600;
+}
+.motivational-line{
+  text-align: center;
+  padding: 36px 500px 40px 54px;
+}
+/*footer-section*/
+.footer-section .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #FFFFFF;
+  height: 500px;
+}
+.communication{
+  width: 485px;
+  height: 320px;
+  padding-left: 20px;
+}
+.communication .sub-title{
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.communication ul{
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.subscribe{
+  width: 325px;
+  height: 204px;
+}
+.subscribe .btn-2{
+  background-color: #FFFFFF;
+  color: #F15B22;
+  border: none;
+  padding: 21px 36px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.subscribe form{
+  border: none;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  padding: 21px 21px 21px 50px;
+
 }
